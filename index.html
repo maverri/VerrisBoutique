@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas</title>
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Crimson Text", serif;    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.promo-banner {
+    background-color: #bf91e4;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.promo-banner h1 {
+    font-size: 2rem;
+    color: #333;
+    font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.promo-banner h1 span {
+    font-weight: bold;
+}
+
+.produtos {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.produtos h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produto p {
+    margin: 10px 0;
+}
+
+.produto button {
+    margin-top: 1px;
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #b785e0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #9463bd;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.newsletter input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.newsletter button {
+    padding: 5px 10px;
+    background-color: #b785e0;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+.creditos {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+ </style>        
+</head>
+<body>
+    <header class="promo-banner">
+        <h1>Verri's Boutique</h1>
+        <br>
+        <h4>As melhores roupas de marca com uma qualidade que só se acha aqui!</h4>
+    </header>
+
+    <section class="produtos">
+        <h2>Vestidos</h2>
+        <div class="produtos-grid">
+            <div class="produto">
+                <img src="vestido1.jpg" alt="Produto 1">
+                <p>Vestido Grecia</p>
+                <p>R$ 484,00</p>
+                <button> Comprar </button>
+            </div>
+            <div class="produto">
+                <img src="vestido2.jpg" alt="Produto 2">
+                <p>Vestido Noronha</p>
+                <p>R$ 389,00</p>
+                <button> Comprar </button>
+            </div>
+            <div class="produto">
+                <img src="vestido3.jpg" alt="Produto 3">
+                <p>Vestido Abrazo</p>
+                <p>R$ 319,00</p>
+                <button> Comprar </button>
+            </div>
+            <div class="produto">
+                <img src="vestido4.jpg" alt="Produto 4">
+                <p>Vestido Stay</p>
+                <p>R$ 259,00</p>
+                <button> Comprar </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="produtos">
+        <h2>Saias</h2>
+        <div class="produtos-grid">
+            <div class="produto">
+                <img src="saia1.jpg" alt="Produto 1">
+                <p>Saia Candy</p>
+                <p>R$ 259,90</p>
+                <button> Comprar </button>
+            </div>
+            <div class="produto">
+                <img src="saia2.jpg" alt="Produto 2">
+                <p>Saia Bright</p>
+                <p>R$ 229,00</p>
+                <button> Comprar </button>
+            </div>
+            <div class="produto">
+                <img src="saia3.jpg" alt="Produto 3">
+                <p>Short Saia Files</p>
+                <p>R$ 229,00</p>
+                <button> Comprar </button>
+            </div>
+            <div class="produto">
+                <img src="saia4.jpg" alt="Produto 4">
+                <p>Saia Polly</p>
+                <p>R$ 229,00</p>
+                <button> Comprar </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="produtos">
+        <h2>Tops</h2>
+        <div class="produtos-grid">
+            <div class="produto">
+                <img src="top1.jpg" alt="Produto 1">
+                <p>Top Jean</p>
+                <p>R$ 289,00</p>
+                <button> Comprar </button>
+            </div>
+            <div class="produto">
+                <img src="top2.jpg" alt="Produto 2">
+                <p>Top Tubinho Basic</p>
+                <p>R$ 199,00</p>
+                <button> Comprar </button>
+            </div>
+            <div class="produto">
+                <img src="top3.jpg" alt="Produto 3">
+                <p>Top Mid Moldable</p>
+                <p>R$ 239,00</p>
+                <button> Comprar </button>
+            </div>
+            <div class="produto">
+                <img src="top4.jpg" alt="Produto 4">
+                <p>Top Rive</p>
+                <p>RR$ 239,00</p>
+                <button> Comprar </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <div>
+                <h3>Contato</h3>
+                <p>Termos de Serviço</p>
+                <p>Política de Privacidade</p>
+                <p>Cancelamento, Trocas e Reembolso</p>
+            </div>
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Digite seu e-mail">
+                <button>Inscrever</button>
+            </div>
+            <footer>
+                <p>&copy; 2024 Verri's Boutique. Todos os direitos reservados.</p>
+            </footer>
+        </div>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+</html>
